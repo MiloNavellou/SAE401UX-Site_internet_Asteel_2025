@@ -1,5 +1,5 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+  
 
 /* Style */
 
@@ -11,10 +11,25 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    font-family: 'ClashDisplay-Regular';
     font-optical-sizing: auto;
     font-style: normal;
     background-color: #FFF8F8;
 }
+
+.custom-title-categ {
+    font-size: clamp(22px, 2vw, 36px); /* Min 18px, s'ajuste avec l'écran, max 24px */
+    font-family: 'ClashDisplay-Medium';
+}
+
+.custom-title-categ:nth-child(even) {
+    color: #0F7C35; /* Couleur à définir */
+}
+
+.custom-title-categ:nth-child(odd) {
+    color: #EE7E32; /* Couleur à définir */
+}
+
 /* Navbar */
 
 .custom-navbar {
@@ -60,4 +75,214 @@ body {
 .custom-button-nav:hover {
     background-color: #ffffff; /* Couleur de fond */
     color: #000000; /* Couleur du texte */
+}
+
+
+/* Cards */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #FFF8F8;
+    border-radius: 15px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0F7C35; /* Ombre noire semi-transparente */
+    z-index: 1;
+}
+
+.card .card-img,
+.card .card-img-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+
+.custom-card-title {
+    font-size: clamp(18px, 2vw, 25px); /* Min 18px, s'ajuste avec l'écran, max 24px */
+    border: 2px solid #FFF8F8;
+}
+
+.card img {
+    filter: grayscale(1);
+    transition: 0.1s;
+}
+
+.card:hover img {
+    filter: grayscale(0);
+    transition: 0.1s;
+}
+
+/* Nos reals */ 
+
+.custom-title-real {
+    color: #0F7C35;
+    font-size: clamp(18px, 2vw, 24px); 
+    font-family: 'ClashDisplay-Regular';
+}
+
+/* Conteneur principal */
+.ticker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    background: #f8f9fa;
+    padding: 10px 0;
+    user-select: none;
+}
+
+/* Styles généraux pour les tickers */
+.stock-ticker {
+    display: flex;
+    overflow: hidden;
+    --gap: 20px;
+    gap: var(--gap);
+}
+
+.stock-ticker ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: scroll 40s linear infinite;
+}
+
+/* Deuxième ligne qui défile dans l'autre sens */
+.stock-ticker.reverse ul {
+    animation: scroll-reverse 40s linear infinite;
+}
+
+/* Pause l'animation au survol */
+.stock-ticker:hover ul {
+    animation-play-state: paused;
+}
+
+/* Animation principale */
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/* Animation inverse */
+@keyframes scroll-reverse {
+    to {
+        transform: translateX(calc(100% + var(--gap)));
+    }
+}
+
+/* Style des éléments */
+.stock-ticker li {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Rond noir */
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Adaptation responsive */
+@media (max-width: 768px) {
+    .stock-ticker li {
+        font-size: 14px;
+    }
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.custom-section {
+    padding: 40px 20px;
+}
+.custom-title2 {
+    color: #E67E22;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 2px solid #E67E22;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.custom-image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Intro */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+                url('img/real/team.webp') center/cover no-repeat;
+    border-radius: 15px;
+    padding: 60px 40px;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+}
+
+.btn-custom {
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn-green {
+    background-color: #28A745;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+}
+
+.btn-orange {
+    background-color: #E67E22;
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #E67E22;
+}
+
+.title-Asteel-intro {
+    font-family: 'ClashDisplay-Bold';
+    
+    font-size: clamp(80px, 2vw, 100px); 
+    
+}
+
+.nd-Asteel-intro {
+    font-family: 'ClashDisplay-Regular';
+    font-size: clamp(22px, 2vw, 36px);
+}
+
+.text-Asteel-intro {
+    font-family: 'ClashDisplay-Regular';
+    font-size: clamp(22px, 2vw, 24px);
+}
+
+.custom-text-warning {
+    font-family: 'ClashDisplay-Semibold';
+    color: #E67E22;
+    font-size: clamp(22px, 2vw, 24px);
 }
