@@ -398,3 +398,16 @@ footer{
     text-decoration: none;
 }
         
+/* Introduction 2 */
+
+.title-from-intro {
+    color: #0F7C35;
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 5rem;
+}
+
+.buildtext-from-intro {
+    color: #E67E22;
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 2rem;
+}
