@@ -21,7 +21,7 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar fixed-top">
             <div class="container-fluid"> <!-- Suppression de px-0 pour garder un peu de padding -->
                 <a class="navbar-brand d-flex align-items-center ps-0 me-auto" href="#">
                     <img src="img/logo/logo_asteel_white.png" class="nav-logo" alt="">
@@ -63,11 +63,10 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main style="margin-top: 80pt;">
         <!-- Intro Section -->
         <div class="container mt-4">
             <div class="hero-section text-white">
-                <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h1 class="fw-bold title-Asteel-intro">ASTEEL,</h1>
                     <h3 class="fw-semibold nd-Asteel-intro">des experts en construction et couvertures métalliques dans
@@ -291,6 +290,62 @@
 
 
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="grid">
+            <div class="case_blanche">
+                <div class="message_footer">
+                    <h2>
+                        Prêt pour un nouveau projet ?
+                    </h2>
+                    <p>
+                        Commençons dès maintenant !
+                    </p>
+                </div>
+                <button class="button_footer">
+                    contactez-nous
+                </button>
+            </div>
+            <div>
+                <ul class="info">
+                    <li>
+                        <b>A propos</b>
+                        <p class="dessous">
+                            Législation & RGPD <br>
+                            <a class="liens"
+                                href="https://www.asteel22.fr/mentions-legales#intellectual-property">©
+                            2024 ASTEEL</a></br>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Contactez-nous</b>
+                        <div class="dessous">
+                            <img src="./img/Téléphone.png" alt="Logo Téléphone"> 02 96 40 15 90 <br>
+                            <img src="./img/mail.png" alt="Logo mail"> <a class="liens"
+                                href="mailto:gestion@asteel.bzh">gestion@asteel.bzh</a> </br>
+                        </div>
+                    </li>
+                    <li>
+                        <b>Nous trouver</b>
+                        <div class="dessous">
+                            <img src="./img/localisation.png" alt="Logo localisation">
+                        <a class="liens" href="https://www.google.com/maps/place/16+Rte+de+Kerbost,+22200+Gr%C3%A2ces/@48.5470414,-3.1626676,17z/data=!3m1!4b1!4m6!3m5!1s0x48118d2f8c114cc9:0x1abfc1ede2f2094c!8m2!3d48.5470414!4d-3.1600927!16s%2Fg%2F11c12_rv26?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D"
+                            >16 route Kerbost 22200 Grâces</a>
+                        </div>
+                    </li>
+                    <li>
+                        <b>Suivez-nous</b>
+                        <div>
+                            <a href="https://www.linkedin.com/company/asteel22/?originalSubdomain=fr"><img src="./img/Linkedin.png" alt="Logo linkedin"></a>
+                            <a href="https://www.facebook.com/p/Asteel-100091969473153/"><img src="./img/Facebook.png" alt="Logo Facebook"></a>
+                        </div>
+                    </li>
+                    <img id="qualibat" src="./img/Qualibat.jpg" alt="Logo Qualibat">
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
