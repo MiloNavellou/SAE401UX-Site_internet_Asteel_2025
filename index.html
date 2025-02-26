@@ -10,9 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
 
@@ -20,182 +19,250 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar fixed-top">
-            <div class="container-fluid"> <!-- Suppression de px-0 pour garder un peu de padding -->
-                <a class="navbar-brand d-flex align-items-center ps-0 me-auto" href="#">
-                    <img src="img/logo/logo_asteel_white.png" class="nav-logo" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto d-flex gap-1 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Nos réalisations</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Nos domaines
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">D1</a></li>
-                                <li><a class="dropdown-item" href="#">D2</a></li>
-                                <li><a class="dropdown-item" href="#">D4</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Avis</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex me-3" role="search"> <!-- Ajout de me-3 pour espacer du bord -->
-                        <button class="btn btn-outline-success custom-button-nav" type="submit">Mon compte</button>
-                    </form>
-                </div>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center ps-0 me-auto" href="#">
+                <img src="img/logo/logo_asteel_white.png" class="nav-logo" alt="">
+            </a>
+
+            <!-- Bouton menu burger avec icône dynamique -->
+            <button class="navbar-toggler custom-burger" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Icône menu burger -->
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto d-flex gap-1 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nos réalisations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nos domaines
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">D1</a></li>
+                            <li><a class="dropdown-item" href="#">D2</a></li>
+                            <li><a class="dropdown-item" href="#">D4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Avis</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3">
+                    <button class="btn btn-outline-success custom-button-nav" type="submit">Mon compte</button>
+                </form>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+
+    <header class="bg-custom py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-white mb-2">Concevoir vos projets des plus simples
+                            aux plus complexes.</h1>
+                        <p class="lead fw-normal custom-color-p mb-4">Réaliser vos projets de constructions métalliques
+                            avec qualité, maîtrise, sécurité et respect. <br>
+                            Bienvenue chez ASTEEL.</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn custom-button-intro btn-lg px-4 me-sm-3" href="#features">Nos réalisations</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#!">Devis</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><a href="#ancre-asteel"><img
+                            class="img-fluid rounded-3 my-5 custom-image-intro" src="img/real/team2.png"
+                            alt="image del'équipe d'Asteel en 2024" /></a></div>
+            </div>
+        </div>
     </header>
 
     <!-- Main -->
-    <main style="margin-top: 80pt;">
+    <main>
         <!-- Intro Section -->
-        <!-- <div class="container mt-4">
-            <div class="hero-section text-white">
-                <div class="hero-content">
-                    <h1 class="fw-bold title-Asteel-intro">ASTEEL,</h1>
-                    <h3 class="fw-semibold nd-Asteel-intro">des experts en construction et couvertures métalliques dans
-                        les Côtes d’Armor (22) et en Bretagne</h3>
-                    <p class="text-Asteel-intro">
-                        Fort de trente années d'expérience, notre expertise et notre savoir-faire nous permettent
-                        aujourd’hui de vous conseiller
-                        et de concevoir vos projets des plus simples aux plus complexes.
-                    </p>
-                    <p class="text-Asteel-intro ">
-                        Surfaces commerciales, industrielles, agroalimentaires, réhabilitations, renforcements,
-                        entrepôts, salles de sports,
-                        carports, terrasses, serrurerie… Nous maîtrisons chacune des phases de notre métier, ce qui nous
-                        permet de vous proposer
-                        des réalisations compétitives avec un gage de qualité et de technicité.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-custom btn-green">Réalisations</a>
-                        <a href="#" class="btn btn-custom btn-orange">Devis</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="container custom-container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <h1 class="title-from-intro">Asteel</h1>
-                    <p class="buildtext-from-intro">Concevoir vos projets des plus simples aux plus complexes.</p>
-                    <p>Réaliser vos projets de constructions métalliques avec qualité, maîtrise, sécurité et respect.<br>Bienvenue chez ASTEEL.</p>
-                    <div class="d-flex mt-3 gap-3 ">
-                        <button class="btn btn-custom btn-green">Nos réalisations</button>
-                        <button class="btn btn-custom btn-orange">Devis</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/real/soudeur.webp" alt="Soudure" class="img-fluid">
-                </div>
-            </div>
-        </div>
 
-        <div class="center mt-4 " style="display: flex; justify-content: center;">
+
+        <div class="center mb-4" style="display: flex; justify-content: center;">
             <div class="arrow-down" onclick="scrollToSection()">
                 <img src="img/icon/chevron.png" style="transform: rotate(-90deg); max-width: 64px; min-width: 32px;"
-                    alt="">
+                    alt="arrow">
             </div>
         </div>
 
-        <!-- Nos domaines -->
-        <div id="target-section" class="container  my-5">
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="flex-grow-1 border-bottom border-success"></div>
-                <h2 class="mx-3 fw-bold text-success custom-title-categ">Nos domaines de réalisations</h2>
-                <div class="flex-grow-1 border-bottom border-success"></div>
-            </div>
-            <p class="mt-3">
-                Nous maîtrisons chacune des phases de notre métier, ce qui nous permet de vous proposer des réalisations
-                compétitives avec un gage de qualité et de technicité.
-                Qualité, maîtrise, sécurité, respect et service sont des valeurs que nous souhaitons partager avec notre
-                clientèle.
-                Particuliers, Professionnels, trouveront des solutions avec Asteel.
-            <p>
-                <span class="text-warning custom-text-warning">Qualité</span>,
-                <span class="text-warning custom-text-warning">maîtrise</span>,
-                <span class="text-warning custom-text-warning">sécurité</span>,
-                <span class="text-warning custom-text-warning">respect</span> et
-                <span class="text-warning custom-text-warning">service</span> sont des valeurs que nous souhaitons
-                partager avec notre
-                clientèle.
-            </p>
-        </div>
-
-        <!-- Nos réalisations -->
         <div class="container  my-5">
             <div class="d-flex align-items-center justify-content-center">
                 <div class="flex-grow-1 border-bottom border-warning"></div>
-                <h2 class="mx-3 fw-bold text-warning custom-title-categ">Nos réalisations en Bretagne</h2>
+                <h2 class="mx-3 fw-bold custom-title-categ-orange">Qui sommes nous ? </h2>
                 <div class="flex-grow-1 border-bottom border-warning"></div>
             </div>
-            <h2 class="mt-3 fw-bold text-success custom-title-real">La galerie photos de nos charpentiers à Grâces à
-                proximité de Guingamp</h2>
+            <h2 class="mt-3 fw-bold text-success custom-title-real">Asteel, des experts en construction et couvertures
+                métalliques dans les Côtes d’Armor (22) et en Bretagne</h2>
 
             <p class="mt-3">
-                Notre entreprise de charpente métallique est spécialisée dans la conception, la fabrication et
-                l'installation de structures métalliques pour les bâtiments industriels, les hangars agricoles, les
-                entrepôts logistiques et les centres commerciaux. <br>
-                Nous mettons nos compétences et notre savoir-faire au service de vos projets les plus ambitieux. Nous
-                travaillons avec des solutions innovantes pour garantir la qualité, la solidité et la durabilité de nos
-                structures. Nous offrons également des services de rénovation et de renforcement pour les structures
-                existantes. </p>
+                <span class="custom-text-warning">Asteel</span>,  est spécialisée dans la construction métallique,
+                la couverture, le bardage et la serrurerie. <br><br>
+
+                Fort de trente années d'expérience, notre expertise et notre savoir-faire nous permettent aujourd’hui de
+                vous conseiller et de concevoir vos projets des plus simples aux plus complexes.
+            </p>
         </div>
-        <div class="container my-5">
-            <div class="row g-4"> <!-- "g-4" ajoute un espace entre les cartes -->
 
-                <!-- Première carte -->
-                <div class="col-md-4"> <!-- col-md-4 = 3 cartes par ligne -->
-                    <div class="card text-bg-dark custom-card">
-                        <img src="img/real/gradin.png" class="card-img" alt="Toiture pour gradin">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Toiture pour gradin de football</h5>
-                            <p class="card-text">Guingamp (22000)</p>
-                        </div>
-                    </div>
+        <!-- Nos domaines -->
+        <div class="color-bg-1" id="target-section">
+            <div class="space"></div>
+
+            <div class="container my-5  ">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-1 border-bottom border-success"></div>
+                    <h2 class="mx-3 fw-bold text-success custom-title-categ">Nos domaines de réalisations</h2>
+                    <div class="flex-grow-1 border-bottom border-success"></div>
                 </div>
-
-                <!-- Deuxième carte -->
-                <div class="col-md-4">
-                    <div class="card text-bg-dark custom-card">
-                        <img src="img/real/gradin.png" class="card-img" alt="Structure métallique">
-                        <!-- size == 500 / 500 px-->
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Structure métallique industrielle</h5>
-                            <p class="card-text">Rennes (35000)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Troisième carte -->
-                <div class="col-md-4">
-                    <div class="card text-bg-dark custom-card">
-                        <img src="img/real/gradin.png" class="card-img" alt="Hangar agricole">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Hangar agricole métallique</h5>
-                            <p class="card-text">Lorient (56100)</p>
-                        </div>
-                    </div>
-                </div>
-
+                <p class="mt-3">
+                    Nous maîtrisons chacune des phases de notre métier, ce qui nous permet de vous proposer des
+                    réalisations
+                    compétitives avec un gage de qualité et de technicité.
+                    Qualité, maîtrise, sécurité, respect et service sont des valeurs que nous souhaitons partager
+                    avec
+                    notre
+                    clientèle.
+                    Particuliers, Professionnels, trouveront des solutions avec Asteel.
+                <p>
+                    <span class=" custom-text-warning">Qualité</span>,
+                    <span class=" custom-text-warning">maîtrise</span>,
+                    <span class=" custom-text-warning">sécurité</span>,
+                    <span class=" custom-text-warning">respect</span> et
+                    <span class=" custom-text-warning">service</span> sont des valeurs que nous souhaitons
+                    partager avec notre
+                    clientèle.
+                </p>
             </div>
+
+            <!-- Nos réalisations -->
+            <div class="container  my-5">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-1 border-bottom border-warning"></div>
+                    <h2 class="mx-3 fw-bold custom-title-categ-orange">Nos réalisations en Bretagne</h2>
+                    <div class="flex-grow-1 border-bottom border-warning"></div>
+                </div>
+                <h2 class="mt-3 fw-bold text-success custom-title-real">La galerie photos de nos charpentiers à
+                    Grâces à
+                    proximité de Guingamp</h2>
+
+                <p class="mt-3">
+                    Notre entreprise de charpente métallique est spécialisée dans la conception, la fabrication et
+                    l'installation de structures métalliques pour les bâtiments industriels, les hangars agricoles,
+                    les
+                    entrepôts logistiques et les centres commerciaux. <br>
+                    Nous mettons nos compétences et notre savoir-faire au service de vos projets les plus ambitieux.
+                    Nous
+                    travaillons avec des solutions innovantes pour garantir la qualité, la solidité et la durabilité
+                    de
+                    nos
+                    structures. Nous offrons également des services de rénovation et de renforcement pour les
+                    structures
+                    existantes. </p>
+            </div>
+
+            <div class="container my-5">
+                <!-- Version Desktop : Grille -->
+                <div class="row g-4 d-none d-md-flex">
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark custom-card">
+                            <img src="img/real/gradin.png" class="card-img" alt="Toiture pour gradin">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Toiture pour gradin de football</h5>
+                                <p class="card-text">Guingamp (22000)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark custom-card">
+                            <img src="img/real/gradin.png" class="card-img" alt="Structure métallique">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Structure métallique industrielle</h5>
+                                <p class="card-text">Rennes (35000)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark custom-card">
+                            <img src="img/real/gradin.png" class="card-img" alt="Hangar agricole">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Hangar agricole métallique</h5>
+                                <p class="card-text">Lorient (56100)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Version Mobile : Carrousel -->
+                <div id="carouselExample" class="carousel slide d-md-none d-block" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card text-bg-dark custom-card">
+                                <img src="img/real/gradin.png" class="card-img" alt="Toiture pour gradin">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Toiture pour gradin de football</h5>
+                                    <p class="card-text">Guingamp (22000)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-bg-dark custom-card">
+                                <img src="img/real/gradin.png" class="card-img" alt="Structure métallique">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Structure métallique industrielle</h5>
+                                    <p class="card-text">Rennes (35000)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-bg-dark custom-card">
+                                <img src="img/real/gradin.png" class="card-img" alt="Hangar agricole">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Hangar agricole métallique</h5>
+                                    <p class="card-text">Lorient (56100)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flèches de navigation -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+
+                    <!-- Indicateurs sous le carrousel -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
         </div>
+        <div class="space"></div>
 
         <!-- Nous choisir -->
         <div class="d-flex align-items-center justify-content-center">
@@ -278,14 +345,14 @@
                 <!-- Colonne Texte -->
                 <div class="col-12 col-md-6">
                     <div class="d-flex align-items-center justify-content-center">
-                        <div class="flex-grow-1 border-bottom border-success"></div>
-                        <h2 class="mx-3 fw-bold custom-title-categ">Nos équipes </h2>
-                        <div class="flex-grow-1 border-bottom border-success"></div>
+                        <div class="flex-grow-1 border-bottom border-warning"></div>
+                        <h2 class="mx-3 fw-bold custom-title-categ-orange">Nos équipes </h2>
+                        <div class="flex-grow-1 border-bottom border-warning"></div>
                     </div>
                     <p><strong>Vos interlocuteurs sont à votre écoute et vous accompagnent dans chacune des étapes de la
                             réalisation de vos projets.</strong></p>
                     <p>Un travail de qualité nécessite une bonne équipe et pour répondre au mieux aux attentes de nos
-                        clients, ASTEEL se compose :</p>
+                        clients, <br><span class=" custom-text-sucess">Asteel</span> se compose :</p>
                     <ul>
                         <li>D’une équipe Affaires (Réalisation des Devis)</li>
                         <li>D’un Bureau d’études (dessinateurs et calculateurs)</li>
@@ -330,9 +397,8 @@
                         <b>A propos</b>
                         <p class="dessous">
                             Législation & RGPD <br>
-                            <a class="liens"
-                                href="https://www.asteel22.fr/mentions-legales#intellectual-property">©
-                            2024 ASTEEL</a></br>
+                            <a class="liens" href="https://www.asteel22.fr/mentions-legales#intellectual-property">©
+                                2024 ASTEEL</a></br>
                         </p>
                     </li>
                     <li>
@@ -347,15 +413,18 @@
                         <b>Nous trouver</b>
                         <div class="dessous">
                             <img src="./img/localisation.png" alt="Logo localisation">
-                        <a class="liens" href="https://www.google.com/maps/place/16+Rte+de+Kerbost,+22200+Gr%C3%A2ces/@48.5470414,-3.1626676,17z/data=!3m1!4b1!4m6!3m5!1s0x48118d2f8c114cc9:0x1abfc1ede2f2094c!8m2!3d48.5470414!4d-3.1600927!16s%2Fg%2F11c12_rv26?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D"
-                            >16 route Kerbost 22200 Grâces</a>
+                            <a class="liens"
+                                href="https://www.google.com/maps/place/16+Rte+de+Kerbost,+22200+Gr%C3%A2ces/@48.5470414,-3.1626676,17z/data=!3m1!4b1!4m6!3m5!1s0x48118d2f8c114cc9:0x1abfc1ede2f2094c!8m2!3d48.5470414!4d-3.1600927!16s%2Fg%2F11c12_rv26?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D">16
+                                route Kerbost 22200 Grâces</a>
                         </div>
                     </li>
                     <li>
                         <b>Suivez-nous</b>
                         <div>
-                            <a href="https://www.linkedin.com/company/asteel22/?originalSubdomain=fr"><img src="./img/Linkedin.png" alt="Logo linkedin"></a>
-                            <a href="https://www.facebook.com/p/Asteel-100091969473153/"><img src="./img/Facebook.png" alt="Logo Facebook"></a>
+                            <a href="https://www.linkedin.com/company/asteel22/?originalSubdomain=fr"><img
+                                    src="./img/Linkedin.png" alt="Logo linkedin"></a>
+                            <a href="https://www.facebook.com/p/Asteel-100091969473153/"><img src="./img/Facebook.png"
+                                    alt="Logo Facebook"></a>
                         </div>
                     </li>
                     <img id="qualibat" src="./img/Qualibat.jpg" alt="Logo Qualibat">
@@ -365,16 +434,45 @@
     </footer>
 
     <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function scrollToSection() {
             document.getElementById("target-section").scrollIntoView({ behavior: "smooth" });
         }
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.createElement("div");
+            cursor.classList.add("custom-cursor");
+            cursor.textContent = "Voir";
+            cursor.style.display = "none"; // Cache le curseur au départ
+            document.body.appendChild(cursor);
+
+            const targetImage = document.querySelector(".custom-image-intro");
+
+            if (targetImage) {
+                // Suivre la souris
+                document.addEventListener("mousemove", (e) => {
+                    cursor.style.left = `${e.clientX}px`;
+                    cursor.style.top = `${e.clientY}px`;
+                });
+
+                // Afficher le curseur personnalisé sur l'image
+                targetImage.addEventListener("mouseenter", () => {
+                    cursor.style.display = "flex"; // Affiche le curseur lorsqu'on survole l'image
+                });
+
+                // Cacher le curseur personnalisé quand la souris quitte l'image
+                targetImage.addEventListener("mouseleave", () => {
+                    cursor.style.display = "none"; // Cache le curseur lorsqu'on quitte l'image
+                });
+            }
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
 
 </html>
