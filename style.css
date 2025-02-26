@@ -61,7 +61,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #EE7E32; /* Couleur au survol à définir */
+    text-decoration: underline;
 }
 
 .custom-button-nav {
@@ -261,7 +261,7 @@ body {
 }
 
 .btn-orange:hover {
-    background-color: #E67E22;
+    background-color: #894a12;
 }
 
 .title-Asteel-intro {
@@ -397,13 +397,4 @@ footer{
     color: #FFF8F8;
     text-decoration: none;
 }
-
-/* test */ 
- .hero-image {
-            flex: 1;
-            height: 100vh;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 50%;
-        }
+        
