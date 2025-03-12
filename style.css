@@ -218,12 +218,12 @@ p {
     gap: var(--gap);
     flex-shrink: 0;
     min-width: 100%;
-    animation: scroll 40s linear infinite;
+    animation: scroll 50s linear infinite;
 }
 
 /* Deuxième ligne qui défile dans l'autre sens */
 .stock-ticker.reverse ul {
-    animation: scroll-reverse 40s linear infinite;
+    animation: scroll-reverse 50s linear infinite;
 }
 
 /* Pause l'animation au survol */
@@ -350,7 +350,7 @@ p {
 .custom-text-warning {
     font-family: 'ClashDisplay-Semibold';
     color: #E67E22;
-    font-size: clamp(24px, 2vw, 26px);
+    font-size: clamp(20px, 2vw, 26px);
 }
 
 .custom-text-sucess {
@@ -660,4 +660,10 @@ main {
     right: 0;
     width: 32px;
     display: none;
+}
+
+.animation-text {
+    opacity: 0; /* Caché au départ */
+    transform: translateY(50px); /* Légèrement en bas */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
