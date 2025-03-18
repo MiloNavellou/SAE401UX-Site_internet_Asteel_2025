@@ -76,7 +76,7 @@ gsap.from(".lead", {
     y: 30,
     duration: 1,
     ease: "power2.out",
-    delay: 0.8
+    delay: 0.9
 });
 
 gsap.from(".d-grid .btn", {
